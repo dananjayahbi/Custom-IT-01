@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/events.css">
+    <title>Hotel Events</title>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100" frameborder="0" scrolling="no"></iframe>
+
+
+    <div class="container">
+        <div class="event-image">
+            <img src="../images/pexels-matheus-bertelli-16985181.jpg" alt="Event Image">
+        </div>
+        <div class="event-form">
+            <h2>Add an Event</h2>
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="4" required></textarea>
+                </div>
+        
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="event-list">
+        <h2>Upcoming Events</h2>
+        <ul id="event-list"></ul>
+    </div>
+
+    <iframe src="footer.html" id="footer" width="100%" frameborder="0" scrolling="no" height="175px" style="margin-top: 30px;"></iframe>
+
+    <script src="../js/events.js"></script>
+</body>
+</html>

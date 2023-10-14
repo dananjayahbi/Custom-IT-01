@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/userAccount.css">
+    <script src="../js/userAccount.js" defer></script>
+    <title>User Account</title>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100" frameborder="0" scrolling="no"></iframe>
+
+    <div class="user-account">
+        <div class="title-cont">
+
+        </div>
+
+        <div class="user-details">
+            <div class="avatar">
+                <img src="../images/user.png" alt="User Avatar">
+            </div>
+            <div class="info">
+                <div class="user-name">John Doe</div>
+                <div class="user-email">johndoe@example.com</div>
+            </div>
+            <div class="btn-cont">
+                <button id="edit-btn">Edit</button>
+                <button id="delete-btn">Delete Account</button>
+            </div>
+        </div>
+
+            <form id="edit-form" class="hidden">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button id="save-btn" type="submit">Save</button>
+        </div>
+    </div>
+
+    <iframe src="footer.html" id="footer" width="100%" frameborder="0" scrolling="no" height="175px" style="margin-top: 105px;"></iframe>
+</body>
+</html>

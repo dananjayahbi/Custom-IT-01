@@ -1,29 +1,23 @@
-var index = 0;
-var slides = document.querySelectorAll(".slides");
-var dot = document.querySelectorAll(".dot");
+const slides = document.querySelectorAll('.slide');
+const slider = document.querySelector('.slider');
 
-function changeSlide(){
+let index = 0;
 
-  if(index<0){
-    index = slides.length-1;
-  }
-  
-  if(index>slides.length-1){
-    index = 0;
-  }
-  
-  for(let i=0;i<slides.length;i++){
-    slides[i].style.display = "none";
-    dot[i].classList.remove("active");
-  }
-  
-  slides[index].style.display= "block";
-  dot[index].classList.add("active");
-  
-  index++;
-  
-  setTimeout(changeSlide,2000);
-  
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateSlider();
 }
 
-changeSlide();
+function updateSlider() {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.classList.add('active');
+        } else {
+            slide.classList.remove('active');
+        }
+    });
+
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
