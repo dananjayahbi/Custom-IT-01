@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7e2ff;
+    color: #333333;
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+}
+
+.sec1, .sec2, .sec3{
+    margin-right: 150px;
+}
+
+/*sec1*/
+.sec1 span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sec1 h2{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.sec1 h1{
+    font-size: 20px;
+}
+
+/*sec 2*/
+.sec2 span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sec2 h2{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
+/*sec 3*/
+#sbmtBTN{
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#email{
+    height: 30px;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.sec3 span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sec3 h2{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
