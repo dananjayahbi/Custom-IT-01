@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=One, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Carreer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/contact_us.js"></script>
+    <link rel="stylesheet" href="../css/career.css">
+</head>
+
+
+<body>
+
+    <!--Start of career form-->
+
+    <form action="./php/career.php" method="post" enctype="multipart/form-data">
+        <div class="regform">
+            <br>
+            <h1 class="he">Application form</h1>
+        </div>
+        <div class="main">
+            <form>
+                <div id="name"><br><br>
+                    <h2 class="name">Name</h2>
+
+                    <input class="firstname" type="text" name="first_name" required><br>
+                    <label class="firstlabel">first name</label>
+
+                    <input class="lastname" type="text" name="last_name" required><br>
+                    <label class="lastlabel">last name</label>
+
+                </div>
+
+
+                <h2 class="name">Address</h2>
+                <input class="address" type="text" name="address" required>
+
+                <h2 class="name">E-mail</h2>
+                <input class="email" type="text" name="email" required>
+
+
+                <h2 class="name">Phone</h2>
+                <input class="code" type="text" name="area_code" required>
+
+                <label class="area-code">Area code</label>
+                <input class="number" type="text" name="phone" required>
+                <label class="phone-number">Phone Number</label>
+
+
+                <h2 class="name">Apply for </h2>
+                <select class="option" name="subject" required>
+                <option disabled="disabled" selected="selected">---Choose Option---</Option>
+                    <option value="Client Support Service">Front Office</option>
+                    <option value="Client Support Service">Front Office</option>
+                    <option value="Client Support Service">Cheif</option>
+
+
+            </select>
+
+
+                <h2 id="gender1">Gender</h2>
+
+                <input type="radio" class="radio" name="gender" value="male">
+                <span class="checkmark"></span>
+                <label class="male"> Male</label>
+
+                <input type="radio" class="radio" name="gender" value="female">
+                <span class="checkmark"></span>
+                <label class="female">Female</label>
+
+                <br>
+
+                <label id="fileToUpload">Upload CV</label>
+                <input type="file" name="file" id="fileToUpload" required>
+
+                <button type="reset" id="btnReset" name="">Reset</button>
+
+                <button type="submit" id="btnSubmit">Submit</button>
+                <br>
+
+        </div>
+        </div>
+        </form>
+        <!--End of career form-->
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav2 a:hover:not(.active) {
+    color: #264653;
+}
+
+.nav-links li a.active {
+    color: #120fe2;
+}
+
+.navbar {
+    display: flex;
+    align-items: 0;
+    justify-content: space-between;
+    width: 100%;
+    font-size: large;
+    background-color: #d19f14;
+}
+
+.logo {
+    margin: 0px 10px 0px 0px;
+    width: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.navbar h4 {
+    margin: 1px 2px 1px 2px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px 15px;
+    position: relative;
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #020096;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%
+}
+
+div .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding: 40px;
+    color: rgb(134, 126, 8);
+}
+
+.footer-content {
+    background-color: #9e9b91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.socials {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 5px 5px;
+    ;
+}
+
+div.li1 {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+div.li2 {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+div.li3 {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+div.li4 {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.social a {
+    font-size: 24px;
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.;
+}
+
+.social a i {
+    font-size: 1.1rem;
+    transition: color.4s ease;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: 200;
+    color: rgb(255, 255, 255);
+}
